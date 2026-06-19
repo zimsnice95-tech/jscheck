@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if !(IE 8)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="author" content="Singtel Optus" />
+    <meta name="description" content="OPTUS Wireless IP VPN User Administration System"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.14.1.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-5.3.3.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables-2.2.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=3.1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-animation.min.css">
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.14.1.min.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables-2.2.2.min.js"></script>
+
+    <script type="text/javascript" src="js/underscore-1.13.7.min.js"></script>
+    <script type="text/javascript" src="js/underscore.string.min.js"></script>
+    <script type="text/javascript" src="js/backbone-1.6.0.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-5.3.3.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/crypto_sha1.js"></script>
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+       if (self === top) {
+           var antiClickjack = document.getElementById("antiClickjack");
+           antiClickjack.parentNode.removeChild(antiClickjack);
+       } else {
+           top.location = self.location;
+       }
+    </script>
+<!--[if IE 8 ]>
+<script>
+    if (document.compatMode != 'CSS1Compat') {
+        alert('It appears that your browser is in Quirks mode and the page content might not display correctly.\n\nTo switch to Standards mode, press F12 and select Browser Mode: "IE8" and Document Mode: "IE8 Standards".');
+    }
+</script>
+<script type="text/javascript" src="js/PIE.js"></script>
+<![endif]-->
+<script>
+    if (document.documentMode && document.documentMode < 8) {
+        alert('It appears that your browser is in Compatibility mode and the page content might not display correctly.\n\nTo turn off Compatibility mode, press F12 and select Browser Mode: "IE8" and Document Mode: "IE8 Standards".');
+    }
+</script>
+
+    <script type="text/javascript" src="nn.js"></script>
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="D3VK4-3HQA2-J7CYF-6W9WL-LAMU9",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"D3VK4-3HQA2-J7CYF-6W9WL-LAMU9";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="cookiepresent",a="v6oytkdiomtya2ru5eia-f-1c7ac05e9-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1383546","ak.ai":parseInt("837653",10),"ak.ol":"0","ak.cr":47,"ak.ipv":4,"ak.proto":"h2","ak.rid":"cc613d","ak.r":36234,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.cport":12127,"ak.gh":"104.115.39.150","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1781852432","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==tHlAAH9sRpjPsy4OTapySQvitJ6JlCgJDa8Jv8YKGtBvfapwOkl1fLwcz9HmAeT431Qmk+UOJ1U5AO/2hgnDArfP4Cd1XxOn4xbaZSTfcQXVtTmc50byYQ7CTxmTvQf5peP9NAr9k3ZGLHQhf2qoHDgMbiO32fLlI5v4qbtb1sTQ7NwcmDve5Qv5JJje3T4eC8PSPL+ukfjd9NWh9FhvyzRPL66ZFcZuc5PiN5/xA79A//Vc0b1QP8wD8aGpar56UMIaEo5oe/32XeP5OeEMu2yn6Q+BfGufT/XJ+JBfuBjwm3I2aSDTNTKvt08d9GWbT+pi4M/0bwXiL3VQv1Da8vFJeLkqg3jy9HnFwQST0BTJzg2it5HCTLs0BRsnrzIpO7EAZ5IoaXuLRSdIESxbNdQRqeUfSdDw+dw4dGsDyy4=","ak.pv":"31","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+
+
+
+
+<div id="navigation">
+    <ul class="no-style">
+        <li class="logo"><a href="index.html"><img src="images/logo_optus.png"></a></li>
+
+
+
+    </ul>
+
+        <div id="username">
+            </br><a id="adminGuide" href="Optus_Wireless_IP_VPN_-_CMI_Administrator_Guide.pdf" target="_blank">Administrator Guide</a>    
+        </div>    
+
+</div>
+
+<div class="rounded" style="position: absolute; top: 110px; left: 0; right: 0; margin-left:auto; margin-right:auto; width: 100%; padding: 5px; font-weight: bold; color: white; background-color:#006280; border-radius: 0.375em; z-index: 100; overflow: hidden;">
+**<b>Important Notice**</b> : Hi! To help keep your services secure, we’ve introduced Multi-Factor Authentication (MFA). To ensure the security of the service all CMI user accounts not enabled for MFA, as of the 01/04/2026, have now been removed from the platform. If access to the Optus CMI platform is still required, a new user account will need to be created either via another existing CMI User on your account, or by contacting the Optus Enterprise & Business Service Centre on 134 315 (or your dedicated 1300 number).
+<!--To see the improvements we have made you can check out the updated Administrator Guide <a href="Optus_Wireless_IP_VPN_-_CMI_Administrator_Guide.pdf" style="color: white; text-decoration: underline" target="_blank">here</a>.-->
+</div>
+<h1 class="heading-primary">Wireless IP VPN</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 header-center">
+
+
+
+    <div id="loginView" class="center-block left-text" >
+
+    Welcome to the Wireless IP VPN Customer Management Interface (CMI).
+    CMI is an optional service designed to manage and deliver user authentication and static IP allocation.
+    CMI may only be accessed by the IT Manager(s) nominated by your organisation.
+
+
+
+    <span id="error_msg">
+</span>
+
+    <div class="panel panel-default round-border" id="login_password">
+        <div class="panel-heading">Login</div>
+            <form  action="?action=login" method="post">
+                <table class="table edit">
+                <tbody>
+                <tr>
+                    <th>Username / Email</th>
+                    <td>
+                        <input type="text" name="username" value="" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>
+                        <input type="password" id="password" name="password" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Authentication type</th>
+                    <td>
+                        <div class="radio" style="width: 100px; float: left; margin-top: 7px;">
+                            <label>
+                                <input type="radio" checked value="APN" name="auth_type" style="margin-top: 1px">
+                                APN
+                            </label>
+                        </div>
+                        <div class="radio floatRight" style="width: 100px; float: left; margin-top: 7px;">
+                            <label>
+                                <input type="radio"  value="Realm" name="auth_type" style="margin-top: 1px">
+                                Realm
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th id="authTypeLabel"></th>
+                    <td>
+                        <input id="authlabeltype" type="text" name="apn_realm" value="" class="form-control">
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="login" value="Login" class="btn btn-default w-50">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a href="#" id="forgot_link" >First Time Login / Forgot Password</a>
+                    </td>
+                </tr>
+                </tfoot>
+                </table>
+            </form>
+        </div>
+
+	<div class="panel panel-default round-border" id="forgot_password" style="display:none">
+            <div class="panel-heading">Password Reset</div>
+            <form  action="?action=login" method="post" name="forgot_pass_form" id="forgot_pass_form">
+                <table class="table edit">
+                <tbody>
+                <tr>
+                    <th>Username</th>
+                    <td>
+                        <input type="text" id="forgot_username" name="username" value="" class="form-control">
+                    </td>
+                </tr>
+		<tr>
+                    <th>Authentication type</th>
+                    <td>
+                        <div class="radio" style="width: 100px; float: left; margin-top: 7px;">
+                            <label>
+                                <input class="auth_type_forgot" type="radio"  checked value="APN" name="auth_type" style="margin-top: 1px">
+                                APN
+                            </label>
+                        </div>
+                        <div class="radio floatRight" style="width: 100px; float: left; margin-top: 7px;">
+                            <label>
+                                <input class="auth_type_forgot" type="radio"   value="Realm" name="auth_type" style="margin-top: 1px">
+                                Realm
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+		<tr>
+                    <th id="authTypeLabel_forgot">APN</th>
+                    <td>
+                        <input id="authlabeltype_forgot" type="text" name="apn_realm" value="" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <th>One-Time Code Delivery</th>
+                    <td>
+                        <div class="radio" style="width: 100px; float: left; margin-top: 7px;">
+                            <label>
+                                <input type="radio" checked="" value="otp_email" name="otp_mobile" style="margin-top: 1px">Email</label>
+                        </div>
+                        <div class="radio floatRight" style="width: 100px; float: left; margin-top: 7px;">
+                            <label>
+                                <input type="radio"  value="otp_mobile" name="otp_mobile" style="margin-top: 1px">Mobile</label>                                             </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="forgot_pass_otp" id="forgot_pass_otp"  value="Send One-Time Code" class="btn btn-default w-55" >
+                    </td>
+                </tr>
+                <tr>
+                    <th id="">One-Time Code </th>
+                    <td>
+                        <input id="forgot_user_token" type="text" name="user_token" value="" class="form-control" autocomplete="one-time-code">
+                    </td>
+                </tr>
+		<tr>
+                    <th>New Password <span class="bi bi-info-circle" data-bs-toggle="popover"  data-bs-placement="bottom" data-bs-html="true" title="New Password" data-bs-content="Mandatory.<br><br>Please enter in your desired new Password, please ensure the new Password is between 12 and 32 characters in length.<br><br>Passwords must not be a common password or dictionary word and it must also have at least one lowercase letter, uppercase letter, numeric and special character."></span></th>
+                    <td>
+                        <input type="password" id="new_password" name="new_password" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Confirm New Password <span class="bi bi-info-circle" data-bs-toggle="popover"  data-bs-placement="bottom" data-bs-html="true" title="Confirm New Password" data-bs-content="Mandatory.<br><br>Please enter in your desired new Password again, it must exactly match the Password entered above."></span></th>
+                    <td>
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-control">
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+		    <td></td>
+                    <td>
+                        <input type="button" id="cancel_forgot" name="cancel" value="Cancel" class="btn btn-default w-50"> &nbsp;
+                    
+                        <input type="submit" id="reset_password" name="reset_password" value="  Reset Password  " class="btn btn-default" disabled>
+                    </td>
+                </tr>
+                </tfoot>
+                </table>
+            </form>
+        </div>
+    </div>
+<SCRIPT type="text/javascript">
+ window.history.forward();
+    function disableBack() 
+ {
+  window.history.forward();
+ }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("forgot_pass_form");
+  const restrictedButton = document.getElementById("forgot_pass_otp");
+  const messagePlaceholder = document.getElementById("error_msg");
+
+      let restrictionStartTime = null;
+      const restrictionDuration = 30; // seconds
+      let countdownInterval = null;
+
+      // Start timer only if button text is "abcde"
+      if (restrictedButton.value != "Send One-Time Code") {
+        restrictionStartTime = Date.now();
+      }
+
+      restrictedButton.addEventListener("click", function () {
+        const timeElapsed = (Date.now() - restrictionStartTime) / 1000;
+
+        if (timeElapsed < restrictionDuration) {
+          restrictedButton.disabled = true;
+
+          // Clear any previous interval
+          if (countdownInterval) {
+            clearInterval(countdownInterval);
+          }
+
+          countdownInterval = setInterval(() => {
+            const now = Date.now();
+            const elapsed = (now - restrictionStartTime) / 1000;
+            const remaining = Math.ceil(restrictionDuration - elapsed);
+
+            if (remaining > 0) {
+              messagePlaceholder.innerHTML = `<br><font color="red">Please wait for ${remaining} seconds before trying Re-Send One-Time Code.</font>`;
+              messagePlaceholder.style.display = "block";
+            } else {
+              clearInterval(countdownInterval);
+              messagePlaceholder.style.display = "none";
+              restrictedButton.disabled = false;
+              restrictionStartTime = null;
+            }
+          }, 1000);
+        }
+      });
+
+      form.addEventListener("submit", function (event) {
+        const activeElement = document.activeElement;
+
+        // Only block if the restricted button was used and restriction is active
+        if (activeElement === restrictedButton && restrictionStartTime) {
+          const timeElapsed = (Date.now() - restrictionStartTime) / 1000;
+
+          if (timeElapsed < restrictionDuration) {
+            event.preventDefault();
+            const timeLeft = Math.ceil(restrictionDuration - timeElapsed);
+            messagePlaceholder.innerHTML = `<br><font color="red">Please wait for ${remaining} seconds before trying Re-Generate One-Time Code.</font>`;
+            messagePlaceholder.style.display = "block";
+            restrictedButton.disabled = true;
+          }
+        }
+      });
+    });
+
+
+</SCRIPT>
+		</div>
+	</div>
+</div>
+
+
+		
+<br><br><br><br>
+<div class="footer" style="width: 100%; text-align: center">
+    &copy; Optus Administration Pty Ltd 2026
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--<div style="height: 1200px;"></div>-->
+<div class="modal"><!-- Place at bottom of page --></div>
+</body>
+</html>
